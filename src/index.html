@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <script type="text/javascript" src="./main.js"></script>
     <form
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post"
@@ -163,24 +162,22 @@
             id="comment" 
             cols="20" rows="2"
             required
-        ></textarea>
+          ></textarea>
         </div>        
         <div class="form-field">
-          <label for="recomends">Woud you recomend us?</label>
+          <label for="recomends">Would you recommend us?</label>
           <select 
-            type="submit"
             name="recomends" 
             id="recomends"
-          >
-            <option value="yes"selected>yes</option>
+            aria-placeholder="yes"
+          >  
+            <option value="yes">yes</option>
             <option value="no">no</option>
-            <option value="maybe">maybe</option>
           </select>
         </div>
       </fieldset>
-      <div class="form-field">
-        <button type="submit">Submit</button>
-      </div>
+      <button type="submit">Submit</button>
     </form>
+    <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
